@@ -3,7 +3,7 @@ Import text files as modules 📦
 
 ### Usage
 ```js
-import importScript from "<Promise>"
+import importScript from "https://deno.land/x/import_script@0.0.2/mod.js"
 
 const { myScript } = await importScript("https://gist.github.com/Username/Gist-ID/.../.js")
 ```
