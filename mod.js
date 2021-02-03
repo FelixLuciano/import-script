@@ -1,12 +1,10 @@
-"use strict"
-
-export default async function importFromGist (gistURL) {
+export default async function importScript (scriptURL) {
   try {
-    const text = await fetch(gistURL).then(res => res.text())
+    const text = await fetch(scriptURL).then(res => res.text())
     let blob = new Blob([ text ], { type: "application/javascript" })
-    let url  = globalThis.URL.createObjectURL(blob)
+    let objURL = globalThis.URL.createObjectURL(blob)
 
-    return await import(url)
+    return await import(objURL)
   }
   catch (e) {
     console.error(e)

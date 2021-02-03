@@ -1,9 +1,12 @@
 # import-script
 Import text files as modules 📦
 
+### WARNING
+[`URL.createObjectURL`](mod.ts#L5) Not implemented! (Deno 1.7.1)
+
 ### Usage
 ```js
-import importScript from "https://deno.land/x/import_script@0.0.2/mod.js"
+import importScript from "https://deno.land/x/import_script@0.0.3/mod.ts"
 
 const { myScript } = await importScript("https://gist.github.com/Username/Gist-ID/.../.js")
 ```
