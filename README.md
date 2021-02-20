@@ -6,9 +6,9 @@ Import text files as modules 📦
 
 ### Usage
 ```js
-import importScript from "https://deno.land/x/import_script@0.0.3/mod.ts"
+import importScript from "https://deno.land/x/import_script@0.0.4/mod.ts"
 
-const { myScript } = await importScript("https://gist.github.com/Username/Gist-ID/.../.js")
+const { myScript } = await importScript("https://example.com/.../script.js")
 ```
 
 ### Credits
